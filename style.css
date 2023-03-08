@@ -1,12 +1,21 @@
+html,
+body {
+  width: 100%;
+}
+
 body {
   background-color: #eee;
+  margin: 0;
 }
 #container {
   display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .colorPicker {
   max-width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .colorPicker h3 {
   text-align: center;
@@ -16,14 +25,24 @@ body {
   position: relative;
   width: 100%;
   max-width: 1062px;
+  margin: 0 auto;
 }
 img {
   position: absolute;
   display: block;
-  padding: 10px;
+  width: 100%;
 }
 .front {
   mix-blend-mode: color;
 }
 .back {
+}
+@media screen and (max-width: 768px) {
+  .colorPicker {
+    margin-bottom: 220px;
+  }
+  .img-container {
+    width: auto;
+    margin: 10px;
+  }
 }
