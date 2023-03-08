@@ -1,0 +1,29 @@
+body {
+  background-color: #eee;
+}
+#container {
+  display: block;
+}
+.colorPicker {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+.colorPicker h3 {
+  text-align: center;
+}
+.img-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1062px;
+}
+img {
+  position: absolute;
+  display: block;
+  padding: 10px;
+}
+.front {
+  mix-blend-mode: color;
+}
+.back {
+}
