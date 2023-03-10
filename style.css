@@ -1,13 +1,15 @@
 html,
 body {
   width: 100%;
+  height: 100%;
 }
 
 body {
   background-color: #eee;
   margin: 0;
 }
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 #container {
@@ -15,52 +17,74 @@ h3 {
   width: 100%;
   height: 100%;
   position: relative;
+  padding-bottom: 10px;
 }
-.colorPicker {
+#colorPicker {
   max-width: fit-content;
-  margin: 0 auto 50px;
+  margin: 0 auto 100px;
 }
-.colorPicker h2 {
+#colorPicker h2 {
   text-align: center;
 }
-#colorPickerInputs {
+.color-picker-inputs {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
 }
-#brightnessSlider {
+.brightness-slider {
   display: inline-block;
   margin: 0px 10px;
 }
-#brightnessSlider h3 {
+.brightness-slider h3 {
   margin: 0;
 }
-.img-container {
+.brightness-slider span {
+  min-width: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+#imgContainer {
   display: block;
   position: relative;
-  width: 100%;
-  max-width: 1062px;
+  max-width: 1044px;
   margin: 0 auto;
+}
+.img-container {
+  position: relative;
+}
+.bath-img {
+  max-width: 34.2%;
+}
+.vanity-img {
+  max-width: 65.8%;
 }
 img {
   position: absolute;
-  display: block;
   width: 100%;
 }
-.front {
+.bath {
+  max-width: 357px;
+}
+.vanity {
+  max-width: 687px;
+  left: 51.7%;
+}
+
+.front.vanity,
+.front.bath {
   mix-blend-mode: color;
 }
-.wall {
+.wall.vanity,
+.wall.vanity {
   filter: brightness(100%);
 }
 .back {
 }
 @media screen and (max-width: 768px) {
-  .colorPicker {
+  #colorPicker {
     margin-bottom: 220px;
   }
-  .img-container {
-    width: auto;
-    margin: 10px;
+  #container {
   }
 }

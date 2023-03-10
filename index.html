@@ -13,25 +13,59 @@
   </head>
   <body>
     <div id="container">
-      <div class="colorPicker">
+      <div id="colorPicker">
         <h2>Color Picker</h2>
-        <div id="colorPickerInputs">
-          <div id="color">
-            <h3>color</h3>
-            <input type="text" readonly="readonly" data-coloris />
+        <div class="color-picker-inputs both">
+          <div class="color">
+            <h4>Both</h4>
+            <input class="both-input" type="text" readonly="readonly" data-coloris />
           </div>
-          <div id="brightnessSlider">
-            <h3>Brightness</h3>
+          <div class="brightness-slider">
+            <h4>Brightness</h4>
+            <input type="range" min="0" max="300" value="100" />
+          </div>
+        </div>
+        <div class="color-picker-inputs bath">
+          <div class="color">
+            <h4>Bath Wall</h4>
+            <input class="bath-input" type="text" readonly="readonly" data-coloris />
+          </div>
+          <div class="brightness-slider">
+            <h4>Brightness</h4>
+            <input type="range" min="0" max="300" value="100" />
+            <span>100</span>
+          </div>
+        </div>
+        <div class="color-picker-inputs vanity">
+          <div class="color">
+            <h4>Vanity Wall</h4>
+            <input class="vanity-input" type="text" readonly="readonly" data-coloris />
+          </div>
+          <div class="brightness-slider">
+            <h4>Brightness</h4>
             <input type="range" min="0" max="300" value="100" />
             <span>100</span>
           </div>
         </div>
       </div>
-      <div class="img-container">
-        <img class="back" src="assets/BathroomColorback.png" alt="" srcset="" />
+      <div id="imgContainer">
+        <!-- <img class="back" src="assets/BathroomColorback.png" alt="" srcset="" />
         <img class="wall" src="assets/BathroomColorWall.png" alt="" srcset="" />
         <img class="front" src="assets/BathroomColorFront.png" alt="" srcset="" />
-        <img class="front-no-filter" src="assets/BathroomColorFront.png" alt="" srcset="" />
+        <img class="front-no-filter" src="assets/BathroomColorFront.png" alt="" srcset="" /> -->
+
+        <div class="bath-img img-container">
+          <img class="back bath" src="assets/BathroomColorBathtubBack.png" alt="" srcset="" />
+          <img class="wall bath" src="assets/BathroomColorBathtubWalls.png" alt="" srcset="" />
+          <img class="front bath" src="assets/BathroomColorBathtubFront.png" alt="" srcset="" />
+          <img class="front-no-filter bath" src="assets/BathroomColorBathtubFront.png" alt="" srcset="" />
+        </div>
+        <div class="vanity-img img-container">
+          <img class="back vanity" src="assets/BathroomColorVanityback.png" alt="" srcset="" />
+          <img class="wall vanity" src="assets/BathroomColorVanityWalls.png" alt="" srcset="" />
+          <img class="front vanity" src="assets/BathroomColorVanityFront.png" alt="" srcset="" />
+          <img class="front-no-filter vanity" src="assets/BathroomColorVanityFront.png" alt="" srcset="" />
+        </div>
       </div>
     </div>
   </body>
