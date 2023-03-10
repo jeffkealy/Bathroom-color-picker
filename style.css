@@ -7,6 +7,9 @@ body {
   background-color: #eee;
   margin: 0;
 }
+h3 {
+  margin: 0;
+}
 #container {
   display: block;
   width: 100%;
@@ -17,8 +20,20 @@ body {
   max-width: fit-content;
   margin: 0 auto 50px;
 }
-.colorPicker h3 {
+.colorPicker h2 {
   text-align: center;
+}
+#colorPickerInputs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#brightnessSlider {
+  display: inline-block;
+  margin: 0px 10px;
+}
+#brightnessSlider h3 {
+  margin: 0;
 }
 .img-container {
   display: block;
@@ -34,6 +49,9 @@ img {
 }
 .front {
   mix-blend-mode: color;
+}
+.wall {
+  filter: brightness(100%);
 }
 .back {
 }

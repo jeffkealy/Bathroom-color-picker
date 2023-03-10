@@ -15,11 +15,23 @@
     <div id="container">
       <div class="colorPicker">
         <h2>Color Picker</h2>
-        <input type="text" readonly="readonly" data-coloris />
+        <div id="colorPickerInputs">
+          <div id="color">
+            <h3>color</h3>
+            <input type="text" readonly="readonly" data-coloris />
+          </div>
+          <div id="brightnessSlider">
+            <h3>Brightness</h3>
+            <input type="range" min="0" max="300" value="100" />
+            <span>100</span>
+          </div>
+        </div>
       </div>
       <div class="img-container">
         <img class="back" src="assets/BathroomColorback.png" alt="" srcset="" />
+        <img class="wall" src="assets/BathroomColorWall.png" alt="" srcset="" />
         <img class="front" src="assets/BathroomColorFront.png" alt="" srcset="" />
+        <img class="front-no-filter" src="assets/BathroomColorFront.png" alt="" srcset="" />
       </div>
     </div>
   </body>
