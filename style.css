@@ -22,35 +22,42 @@ h4 {
 #colorPicker {
   max-width: fit-content;
   margin: 0 auto 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
-#colorPicker h2 {
+.title {
   text-align: center;
+  width: 100%;
+  margin: 5px auto 16px;
 }
 .color-picker-inputs {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 5px;
 }
 .color input {
   max-width: 120px;
 }
+.clr-picker {
+  margin-top: 60px;
+}
 .brightness-slider {
   display: inline-block;
-  margin: 0px 10px;
+  margin: 5px 0;
 }
 .brightness-slider h3 {
   margin: 0;
 }
 .brightness-slider span {
   min-width: 24px;
-  display: inline-block;
+  display: block;
   vertical-align: top;
 }
 #imgContainer {
   display: block;
   position: relative;
-  max-width: 1044px;
+  max-width: 768px;
   margin: 0 auto;
 }
 .img-container {
@@ -87,6 +94,20 @@ img {
 @media screen and (max-width: 768px) {
   #colorPicker {
     margin-bottom: 220px;
+    flex-direction: column;
+  }
+  .color-picker-inputs {
+    flex-direction: row;
+  }
+  .clr-picker {
+    top: 175px !important;
+    margin: 0;
+  }
+  .brightness-slider {
+    margin: 0px 10px;
+  }
+  .brightness-slider span {
+    display: inline-block;
   }
   #container {
   }
